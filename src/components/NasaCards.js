@@ -1,12 +1,13 @@
 import React from "react";
 
-const NasaCards = props => {
+const NasaCards = ({url,title,exp,date}) => {
+  
   return (
     <div>
-      <img src={props.imgUrl}></img>
-      <h1>{props.title}</h1>
-      <p>{props.explanation}</p>
-      <p>{props.date}</p>
+      <img width = '70%'src={url} alt = 'Photo of the day from Nasa'></img>
+      <h1>{title}</h1>
+      <p>{exp}</p>
+      <p>{date}</p>
     </div>
   );
 };

@@ -1,13 +1,14 @@
 import React from "react";
 import "./App.css";
 import NasaList from "./components/NasaList"
+import {Picture} from './components/Styles'
 
 function App() {
   return (
-    <div className="App">
+    <Picture >
       <NasaList />
       
-    </div>
+    </Picture>
   );
 }
 
